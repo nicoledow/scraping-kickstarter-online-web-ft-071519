@@ -14,4 +14,4 @@ create_project_hash
 # image link: kickstarter.css("div.project-thumbnail a img").attribute("src").value
 #descriptions: kickstarter.css("p.bbcard_blurb").text
 #locations: kickstarter.css("ul .project-meta span.location-name").text
-#percent funded: kickstarter.css("ul.project-stats li.first.funded strong").text
+#percent funded: kickstarter.css("ul.project-stats li.first.funded strong").text..gsub("%", "").to_i
